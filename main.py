@@ -295,7 +295,8 @@ def paint():
         c.blend(x, y, (255, 240, 210), rng.uniform(0.25, 0.7))
 
     # --- the two suns of Solmara
-    c.glow(470, 566, 190, (255, 178, 100), peak=0.5)
+    # Stronger halo on the main sun so it reads as the poster focal point
+    c.glow(470, 566, 215, (255, 178, 100), peak=0.62)
     c.glow(268, 474, 120, (255, 196, 130), peak=0.45)
     c.disc(470, 566, 66, (255, 226, 158))
     c.disc(470, 566, 52, (255, 238, 190))
